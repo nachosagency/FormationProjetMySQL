@@ -79,14 +79,14 @@ On peut aussi ajouter un décalage :
 ```SQL
 SELECT nom_colonne, nom_autre_colonne
 FROM nom_table
-LIMIT nb_enregistrement, decalage
+LIMIT decalage, nb_enregistrement
 ```
 
 Ex : On veut la page 3 de voiture (10 enregistrements à partir du 20e)
 ```SQL
 SELECT marque, modele
 FROM voiture
-LIMIT 10, 20
+LIMIT 20, 10
 ```
 
 Filtrer par critères
